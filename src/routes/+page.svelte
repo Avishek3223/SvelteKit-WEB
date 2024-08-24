@@ -24,7 +24,7 @@
     <input type="text" bind:value={title} />
   </div>
 </div>
-
+ 
 <style>
   h1 {
     font-size: 8rem;
