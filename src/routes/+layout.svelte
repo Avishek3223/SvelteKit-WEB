@@ -1,6 +1,5 @@
 <script>
   import Navbar from "$lib/components/Navbar.svelte";
-  import image from "$lib/assets/notes.svg";
   import "../styles/global.css";
 </script>
 
@@ -24,9 +23,5 @@
 <main
   class="flex items-center justify-between w-full px-10 text-justify font-bold max-md:w-[90vw]"
 >
-  <div class="w-[50vw]">
     <slot></slot>
-  </div>
-
-  <img class="w-[40%]" src={image} alt="Illustration" />
 </main>

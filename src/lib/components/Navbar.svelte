@@ -3,12 +3,12 @@
     export let title = 'My Website';
 </script>
 
-<nav>
-    <div class="container">
+<nav class="border-b-2 border-black">
+    <div class="flex justify-between items-center px-10 font-bold">
         <a href="/" class="logo">{title}</a>
         <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
+            <li><a href="/notes">Notes</a></li>
             <li><a href="/contact">Contact</a></li>
         </ul>
     </div>
@@ -21,14 +21,6 @@
         padding: 1rem;
     }
 
-    .container {
-        font-family: 'Source Code Pro', sans-serif;
-        font-weight: 700;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
     .logo {
         font-size: 2rem;
         color: rgb(0, 0, 0);
@@ -38,13 +30,13 @@
     ul {
         list-style: none;
         display: flex;
-        gap: 1rem;
+        gap:3rem;
     }
 
     ul li a {
         color: rgb(0, 0, 0);
         text-decoration: none;
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     ul li a:hover {
