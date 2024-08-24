@@ -1,8 +1,5 @@
 <script>
-  let title = "Hello ";
-  function handleClick() {
-    title += "World!";
-  }
+  let title = "Hello world!";
 </script>
 
 <div>
@@ -19,10 +16,6 @@
     to build a full-featured app with ease and flexibility. Stay tuned as I
     continue to add new features and content!
   </p>
-  <div class="button_input">
-    <button on:click={handleClick}>Click Me</button>
-    <input type="text" bind:value={title} />
-  </div>
 </div>
  
 <style>

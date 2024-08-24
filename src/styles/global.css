@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
     font-family: 'Source Code Pro', Arial, sans-serif;
     background-color: #fff3fe;
