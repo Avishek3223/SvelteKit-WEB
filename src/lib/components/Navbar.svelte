@@ -16,7 +16,7 @@
 
 <style>
     nav {
-        background-color: #e8f5ff;
+        background-color: #f2f9ff;
         color: white;
         padding: 1rem;
     }

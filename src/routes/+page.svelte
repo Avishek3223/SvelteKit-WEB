@@ -1,69 +1,73 @@
 <script>
-  import Navbar from "$lib/components/Navbar.svelte";
   let title = "Hello ";
   function handleClick() {
     title += "World!";
   }
 </script>
 
-<svelte:head>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-    rel="stylesheet"
-  />
-</svelte:head>
-
-
 <div>
-  <Navbar title="SvelteKit" />
   <h1>{title}</h1>
   <p>
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod aliquid enim,
-    facere in sequi hic quidem deleniti? Laudantium a perferendis molestias
-    praesentium non officiis optio fuga laboriosam explicabo aliquam veritatis
-    eveniet repellendus nostrum minus quae consequuntur voluptatibus, atque qui
-    soluta nobis modi nemo provident! Blanditiis minus laboriosam incidunt et
-    cupiditate?
+    Welcome to my first Svelte website! This project is an exciting journey into
+    the world of SvelteKit, where I'm exploring the power of modern web
+    development. Here, you'll find a simple and clean interface, built with
+    performance and responsiveness in mind.
   </p>
-  <button on:click={handleClick}>Click Me</button>
-  <input type="text" bind:value={title} />
+  <p>
+    Svelte is a unique framework that compiles your code into efficient,
+    imperative code that directly manipulates the DOM. With SvelteKit, I'm able
+    to build a full-featured app with ease and flexibility. Stay tuned as I
+    continue to add new features and content!
+  </p>
+  <div class="button_input">
+    <button on:click={handleClick}>Click Me</button>
+    <input type="text" bind:value={title} />
+  </div>
 </div>
 
 <style>
-  body {
-    font-family: 'Source Code Pro', Arial, sans-serif;
-    background-color: #252525;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-  }
-
   h1 {
-    color: #ff3e00;
-    font-size: 48px;
+    font-size: 8rem;
     margin-bottom: 20px;
-    font-family: 'Source Code Pro', sans-serif;
+    font-family: "Bebas Neue", sans-serif;
+    background: linear-gradient(to right,rgb(7, 46, 58), rgb(24, 24, 24));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
   }
 
   p {
     font-size: 18px;
-    font-family: 'Source Code Pro', sans-serif;
+    margin-bottom: 20px;
   }
 
-  a {
-    color: #ff3e00;
-    text-decoration: none;
-    font-family: 'Source Code Pro', sans-serif;
+  input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex-grow: 1;
+    margin-left: 10px;
   }
 
-  a:hover {
-    text-decoration: underline;
+  .button_input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  button {
+    background-color: #ff3e00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #e53900;
   }
 </style>
